@@ -24,8 +24,8 @@ function App() {
           {movies.map((movie) => (
             <div key={movie.id}>
               <img src={movie.medium_cover_image} />
-              <h2>{movie.title}</h2>
-              <p>{movie.summary}</p>
+              <h2>{movie.title_long}</h2>
+              <p>{movie.rating}</p>
               <ul>
                 {movie.genres.map((g) => (
                   <li key={g}>{g}</li>
